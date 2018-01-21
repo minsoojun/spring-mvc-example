@@ -38,7 +38,6 @@ public class Customer implements java.io.Serializable {
         if (emailAddress == null) {
             return false;
         }
-        // ドメイン名が「ng.foo.baz」であれば使用不可のアドレスと見なす
         return emailAddress.matches(".*@ng.foo.baz$");
     }
 

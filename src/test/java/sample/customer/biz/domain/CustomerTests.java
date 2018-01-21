@@ -24,5 +24,6 @@ public class CustomerTests {
     public void testCustmer(){
         Customer cus = new Customer("TestMe", "minsoo@ng.foo.baz", new Date(System.currentTimeMillis()), 3);
         assertTrue(cus.isNgEmail());
+        assertEquals("FavoriteNumber", new Integer(3), cus.getFavoriteNumber());
     }
 }
