@@ -5,23 +5,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>確認画面</title>
+<title>확인 화면</title>
 </head>
 <body>
-<h1>確認画面</h1>
+<h1>확인 화면</h1>
 <form method="post">
 <dl>
-  <dt>名前</dt>
+  <dt>이름</dt>
   <dd><c:out value="${editCustomer.name}"/></dd>
-  <dt>Eメールアドレス</dt>
+  <dt>메일</dt>
   <dd><c:out value="${editCustomer.emailAddress}"/></dd>
-  <dt>誕生日</dt>
+  <dt>생년월일</dt>
   <dd><fmt:formatDate pattern="yyyy/MM/dd" value="${editCustomer.birthday}"/></dd>
-  <dt>好きな数字</dt>
+  <dt>좋아하는 숫자</dt>
   <dd><c:out value="${editCustomer.favoriteNumber}"/></dd>
 </dl>
-<button type="submit" name="_event_confirmed">更新</button>
-<button type="submit" name="_event_revise">再入力</button>
+<button type="submit" name="_event_confirmed">변경</button>
+<button type="submit" name="_event_revise">수정</button>
 </form>
 </body>
 </html>

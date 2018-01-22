@@ -5,21 +5,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>顧客詳細画面</title>
+<title>고객 상세 정보</title>
 </head>
 <body>
-<h1>顧客詳細画面</h1>
+<h1>고객 상세 정보</h1>
 <dl>
-  <dt>名前</dt>
+  <dt>이름</dt>
   <dd><c:out value="${customer.name}"/></dd>
-  <dt>Eメールアドレス</dt>
+  <dt>메일</dt>
   <dd><c:out value="${customer.emailAddress}"/></dd>
-  <dt>誕生日</dt>
+  <dt>생년월일</dt>
   <dd><fmt:formatDate pattern="yyyy/MM/dd" value="${customer.birthday}"/></dd>
-  <dt>好きな数字</dt>
+  <dt>좋아하는 숫자</dt>
   <dd><c:out value="${customer.favoriteNumber}"/></dd>
 </dl>
 <c:url value="/customer" var="url"/>
-<a href="${url}">一覧</a>
+<a href="${url}">리스트</a>
 </body>
 </html>

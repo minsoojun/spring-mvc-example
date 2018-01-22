@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>指定された顧客は見つかりません</title>
+<title>404</title>
 </head>
 <body>
-<h1>指定された顧客は見つかりません</h1>
+<h1>지정한 파일이 존재하지 않습니다</h1>
 <c:url value="/customer" var="url"/>
-<a href="${url}">一覧画面へ戻る</a>
+<a href="${url}">메뉴로 돌아가기</a>
 </body>
 </html>

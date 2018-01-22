@@ -38,7 +38,7 @@ public class Customer implements java.io.Serializable {
         if (emailAddress == null) {
             return false;
         }
-        return emailAddress.matches(".*@ng.foo.baz$");
+        return emailAddress.matches(".*@ng.com$");
     }
 
     public Customer() {}

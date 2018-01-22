@@ -5,21 +5,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>更新完了</title>
+<title>변경완료</title>
 </head>
 <body>
-<h1>更新完了</h1>
+<h1>변경완료</h1>
 <dl>
-  <dt>名前</dt>
+  <dt>이름</dt>
   <dd><c:out value="${editCustomer.name}"/></dd>
-  <dt>Eメールアドレス</dt>
+  <dt>메일</dt>
   <dd><c:out value="${editCustomer.emailAddress}"/></dd>
-  <dt>誕生日</dt>
+  <dt>생년월일</dt>
   <dd><fmt:formatDate pattern="yyyy/MM/dd" value="${editCustomer.birthday}"/></dd>
-  <dt>好きな数字</dt>
+  <dt>좋아하는 숫자</dt>
   <dd><c:out value="${editCustomer.favoriteNumber}"/></dd>
 </dl>
 <c:url var="url" value="/customer"/>
-<a href="${url}">戻る</a>
+<a href="${url}">돌아가기</a>
 </body>
 </html>
