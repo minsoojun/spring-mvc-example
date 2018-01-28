@@ -18,12 +18,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
+/**
+ *
+ */
 public class CustomerTests {
 
     @Test
     public void testCustmer(){
         Customer cus = new Customer("TestMe", "minsoo@ng.foo.baz", new Date(System.currentTimeMillis()), 3);
         assertTrue(cus.isNgEmail());
+        assertEquals("minsoo@ng.foo.baz",cus.getEmailAddress());
         assertEquals("FavoriteNumber", new Integer(3), cus.getFavoriteNumber());
     }
 }
