@@ -13,7 +13,6 @@ public class CustomerTest {
         Customer cus = new Customer("TestMe", "minsoo@ng.com", new Date(System.currentTimeMillis()), 3);
         assertTrue(cus.isNgEmail());
         assertEquals("Testme",cus.getName());
-        assertEquals("minsoo@ng.com",cus.getEmailAddress());
         assertEquals("FavoriteNumber", new Integer(3), cus.getFavoriteNumber());
     }
 }
