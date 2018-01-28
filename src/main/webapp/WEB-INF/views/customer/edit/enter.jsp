@@ -4,36 +4,36 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>入力画面</title>
+<title>입력 화면</title>
 </head>
 <body>
-<h1>入力画面</h1>
+<h1>입력 화면</h1>
 <form:form modelAttribute="editCustomer">
 <dl>
-  <dt>名前</dt>
+  <dt>이름</dt>
   <dd>
     <form:input path="name"/>
     <form:errors path="name"/>
   </dd>
-  <dt>Eメールアドレス</dt>
+  <dt>메일</dt>
   <dd>
     <form:input path="emailAddress"/>
     <form:errors path="emailAddress"/>
     <form:errors path="ngEmail"/>
   </dd>
-  <dt>誕生日</dt>
+  <dt>생년월일</dt>
   <dd>
     <form:input path="birthday"/>
     <form:errors path="birthday"/>
   </dd>
-  <dt>好きな数字</dt>
+  <dt>좋아하는 숫자</dt>
   <dd>
     <form:input path="favoriteNumber"/>
     <form:errors path="favoriteNumber"/>
   </dd>
 </dl>
 <button type="submit" name="_event_proceed" value="proceed">
-  次へ
+  다음으로
 </button>
 </form:form>
 </body>

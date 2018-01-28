@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>例外発生</title>
+<title>예외발생</title>
 </head>
 <body>
 <dl>
-  <dt>例外クラス</dt>
+  <dt>대상클래스</dt>
   <dd>${exception.getClass().name}</dd>
-  <dt>メッセージ</dt>
+  <dt>메세지</dt>
   <dd>${exception.message}</dd>
 </dl>
 
