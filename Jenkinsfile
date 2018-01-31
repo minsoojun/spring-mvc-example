@@ -11,5 +11,10 @@ pipeline {
         build 'PMDJob'
       }
     }
+    stage('JaCoCo') {
+      steps {
+        build(job: 'JaCoCoFindBugJob', wait: true)
+      }
+    }
   }
 }
