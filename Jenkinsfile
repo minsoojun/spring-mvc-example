@@ -6,5 +6,10 @@ pipeline {
         build(job: 'CheckStyleJob', propagate: true)
       }
     }
+    stage('PMD') {
+      steps {
+        build 'PMDJob'
+      }
+    }
   }
 }
