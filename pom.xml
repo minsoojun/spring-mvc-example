@@ -9,8 +9,10 @@
 
   <name>Spring MVC Sample</name>
   <properties>
-    <org.springframework-version>4.2.6.RELEASE</org.springframework-version>
+    <org.springframework-version>5.0.4.RELEASE</org.springframework-version>
   </properties>
+
+
 
   <dependencies>
     <dependency>
